@@ -1002,7 +1002,7 @@ if (OnAspiration ==0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collision après aspiration
+            <string>///Collision après Aspiration
 if (OnElemental &gt; 0)
 {
     TimerELMBonus -=1;
