@@ -637,7 +637,7 @@ if ((place_meeting(x, y+8,obj_Block_Bub_Collision_V)))
 {
 
     //Crounch
-    if (GP_Crouch)
+    if (GP_Crouch) &amp;&amp; (!GP_Jump)
     {
         self.sprite_index=spr_Bub_Crouch;
         OnCrouch = 1
@@ -776,6 +776,48 @@ if instance_exists(obj_Eclair_Bouclier)
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>OnCrouch</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -936,6 +978,20 @@ if (BouclierActive == 1)
       </action>
       <action>
         <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -1091,6 +1147,7 @@ if (CooldownBullet == 0)
 if (BulTimeOn = 1)
 {
     BulletDuree -=1;
+    
     /*FcExpo +=1;
     if ((FcExpo) &gt; 4)
     { FcExpo = 4;
@@ -1107,8 +1164,8 @@ if (BulTimeOn = 1)
     {
     room_speed = 1;
     }
-    //Sortie du bullet Time
-    
+
+//Sortie du bullet Time
 if (BulletDuree == 0)
     {
     BulTimeOn = 0;
@@ -1116,7 +1173,7 @@ if (BulletDuree == 0)
     CooldownBullet = 600;
     BulletDuree = 5;
     
-    }  
+    }
 }
 
 </string>

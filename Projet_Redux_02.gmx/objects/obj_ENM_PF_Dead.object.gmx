@@ -87,6 +87,8 @@ SpwanFruitTimer -= 1;
 //Temps avant spawn Fruit
 if (SpwanFruitTimer &lt;= 0)
 {
+    show_debug_message("Fait un fruit");
+        /*
         if (vme == 0)
         {
             instance_destroy();
@@ -94,52 +96,53 @@ if (SpwanFruitTimer &lt;= 0)
             -- vme;
             --vfruit; 
         }
+        */
         if (vme == 1)
         { 
             instance_destroy();
-            //instance_create(x, y, obj_Orange);
+            instance_create(x, y, obj_AmeBleu);
             -- vme;
             --vfruit;
         }
         if (vme == 2)
         {
             instance_destroy();
-            //instance_create(x, y, obj_Poivron);
+            instance_create(x, y, obj_AmeViolette);
             -- vme;
             --vfruit;
         }
         if (vme == 3)
         { 
             instance_destroy();
-            //instance_create(x, y, obj_Raisin);
+            instance_create(x, y, obj_AmeRouge);
             -- vme;
             --vfruit;
         }
         if (vme == 4)
         {
             instance_destroy();
-            //instance_create(x, y, obj_Tomate);
+            instance_create(x, y, obj_AmeJaune);
             -- vme;
             --vfruit;
         }
         if (vme == 5)
         {
             instance_destroy();
-            //instance_create(x, y, obj_Cerise);
+            instance_create(x, y, obj_AmeVerte);
             -- vme;
             --vfruit;
         }
         if (vme == 6)
         { 
             instance_destroy();
-            //instance_create(x, y, obj_Champignon);
+            instance_create(x, y, obj_AmeArgent);
             -- vme;
             --vfruit;
         }
-        if (vme == 7)
-        {
+        if (vme &gt;= 7)
+        { 
             instance_destroy();
-            //instance_create(x, y, obj_Cornichon);
+            instance_create(x, y, obj_AmeOr);
             -- vme;
             --vfruit;
         }

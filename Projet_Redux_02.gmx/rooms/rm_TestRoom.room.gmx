@@ -351,7 +351,6 @@
     <instance objName="obj_Block_Bub_Collision_V" x="432" y="704" name="inst_334DA06F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="464" y="704" name="inst_8CEAA661" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="448" y="704" name="inst_2FD80665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Degat" x="448" y="688" name="inst_A865C304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plat_teleportation_Red" x="64" y="0" name="inst_BD2613C0" locked="0" code="" scaleX="58" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Joueur" x="528" y="240" name="inst_6800F23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Game_start_end" x="0" y="0" name="inst_20558EB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -366,7 +365,6 @@
     <instance objName="obj_Block_Base" x="64" y="352" name="inst_E723C31C" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Base" x="368" y="352" name="inst_71B30636" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Base" x="560" y="432" name="inst_02D422F0" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ENM_Buster" x="752" y="720" name="inst_56E64932" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="560" y="736" name="inst_2B612A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="544" y="736" name="inst_18EFC479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="528" y="736" name="inst_3895CFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -472,7 +470,6 @@
     <instance objName="obj_Block_Bub_Collision_V" x="496" y="256" name="inst_E91DCC02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="512" y="256" name="inst_FCA53917" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Block_Bub_Collision_V" x="528" y="256" name="inst_729C4AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ENM_Buster" x="272" y="496" name="inst_6B2B552C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Eclair" x="128" y="304" name="inst_9C698FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Feu" x="304" y="304" name="inst_41EA8B12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Eau" x="464" y="304" name="inst_34011483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -582,11 +579,7 @@
     <instance objName="obj_Bulle_Eclair" x="608" y="688" name="inst_89772E47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Feu" x="736" y="672" name="inst_DA8C9B4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Eau" x="848" y="688" name="inst_D9F1B297" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ENM_PF" x="192" y="672" name="inst_719876DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Syrene" x="256" y="672" name="inst_9E8EE709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Lapin" x="144" y="480" name="inst_050E1AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Ghost" x="544" y="720" name="inst_355B443F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Slime" x="752" y="400" name="inst_35057665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="96" y="688" name="inst_719876DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmeBleu" x="80" y="192" name="inst_F9D8008E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmeViolette" x="128" y="192" name="inst_714B70E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmeRouge" x="176" y="192" name="inst_A1C0A6DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -595,6 +588,17 @@
     <instance objName="obj_AmeArgent" x="320" y="192" name="inst_584E9E59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmeOr" x="368" y="192" name="inst_A79F65B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmePure" x="416" y="192" name="inst_54F7F5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="384" y="688" name="inst_293F91B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="240" y="688" name="inst_952350EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="176" y="688" name="inst_7928DF24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="304" y="688" name="inst_A987B5D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="640" y="592" name="inst_D442E329" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="160" y="336" name="inst_4808C22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="736" y="416" name="inst_BAD3EFE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="896" y="416" name="inst_783AB214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Syrene" x="96" y="496" name="inst_8C6AA40C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Syrene" x="208" y="496" name="inst_9F93C739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Syrene" x="336" y="496" name="inst_D4257289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

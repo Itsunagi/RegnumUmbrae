@@ -76,6 +76,7 @@ vtm = 1;
 startAlarme = 0;
 alarmeTimeDeath = 45;
 
+/////////////////////////Spawn
 // alarm de spawn des baloon 
 alarm[2]= 5;
 // alarm de spawn des invader
@@ -93,6 +94,8 @@ vspawninvader = 0;
 vtsi = 0;
 vspawnincendo = 1;
 vspawncoiley = 1;
+
+
 /*
 if (room = Level_20){
 // timeline de spawn des bulle d'eau 
@@ -239,90 +242,15 @@ vtimerbaron--;
         show_debug_message("ENNEMIE NRV !!!");
     }
  
-} 
-if (room = Level_01){
-     if ( vdeath = 3)
-    {
-        timeToChangeRoom -= 1;
-        if (timeToChangeRoom == 0)
-            {
-            room_goto(Level_20);
-            vdeath = 0;
-            timeToChangeRoom = 240;
-            vfruit = 0;
-            vlife = lives;
-            vennemieNRV = 0;
-            vtimerbaron = 1800;
-            }
-    }
-    if ( vdeath = 2){
-        vennemieNRV = 1;
-    }
- }
-  if (room = Level_20){
-     if ( vdeath = 5)
-    {
-        timeToChangeRoom -= 1;
-        if (timeToChangeRoom == 0)
-            {
-            room_goto(Level_47);
-            vdeath = 0;
-            timeToChangeRoom = 240;
-            vfruit = 0;
-            vlife = lives;
-            vennemieNRV = 0;
-            vtimerbaron = 1800;
-            }
-    }
-     if ( vdeath = 4){
-        vennemieNRV = 1;
-    }
- }
-  if (room = Level_47){
-     if ( vdeath = 7)
-    {
-        timeToChangeRoom -= 1;
-        if (timeToChangeRoom == 0)
-        {
-        room_goto(Level_62);
-        vdeath = 0;
-        timeToChangeRoom = 240;
-        vfruit = 0;
-        vlife = lives;
-        vennemieNRV = 0;
-        vtimerbaron = 1800;
-        }
-    }
-     if ( vdeath = 6){
-        vennemieNRV = 1;
-    }
- }
-  if (room = Level_62){
-     if ( vdeath = 7)
-    {
-        timeToChangeRoom -= 1;
-        if (timeToChangeRoom == 0)
-        {
-        show_debug_message("GGGGGGGGGGGGAAAAAAAAAAAAGGGGGGGGGGNNNNNNNNNNNEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
-        room_goto(Menu_Room_Victory);
-        //vdeath = 0;
-        //vlife = lives;
-        //vennemieNRV = 0;
-        //vtimerbaron = 1800;
-        }
-    }
-     if ( vdeath = 6){
-        vennemieNRV = 1;
-    }
- }
+}
+*/
+//////////////////////////////////////Calcul des ames
 
-
-//Calcul des fruits
 if (vtm=0)
 {
     
     vme = vfruit;
-    show_debug_message("entrer");
+    //show_debug_message("entrer");
     show_debug_message(vme);
     //vfruit = 0;
     vtm = 1;
@@ -350,8 +278,93 @@ if (alarmeTimeDeath == 0)
 startAlarme = 0;
 vtm = 0;
 }
-// Level 1
 
+
+/*
+//////////////////////////////////////////Variable Level 01
+if (room = Level_01){
+     if ( vdeath = 3)
+    {
+        timeToChangeRoom -= 1;
+        if (timeToChangeRoom == 0)
+            {
+            room_goto(Level_20);
+            vdeath = 0;
+            timeToChangeRoom = 240;
+            vfruit = 0;
+            vlife = lives;
+            vennemieNRV = 0;
+            vtimerbaron = 1800;
+            }
+    }
+    if ( vdeath = 2){
+        vennemieNRV = 1;
+    }
+ }
+//////////////////////////////////////////Variable Level 20
+  if (room = Level_20){
+     if ( vdeath = 5)
+    {
+        timeToChangeRoom -= 1;
+        if (timeToChangeRoom == 0)
+            {
+            room_goto(Level_47);
+            vdeath = 0;
+            timeToChangeRoom = 240;
+            vfruit = 0;
+            vlife = lives;
+            vennemieNRV = 0;
+            vtimerbaron = 1800;
+            }
+    }
+     if ( vdeath = 4){
+        vennemieNRV = 1;
+    }
+ }
+//////////////////////////////////////////Variable Level 47
+  if (room = Level_47){
+     if ( vdeath = 7)
+    {
+        timeToChangeRoom -= 1;
+        if (timeToChangeRoom == 0)
+        {
+        room_goto(Level_62);
+        vdeath = 0;
+        timeToChangeRoom = 240;
+        vfruit = 0;
+        vlife = lives;
+        vennemieNRV = 0;
+        vtimerbaron = 1800;
+        }
+    }
+     if ( vdeath = 6){
+        vennemieNRV = 1;
+    }
+ }
+//////////////////////////////////////////Variable Level 62
+  if (room = Level_62){
+     if ( vdeath = 7)
+    {
+        timeToChangeRoom -= 1;
+        if (timeToChangeRoom == 0)
+        {
+        show_debug_message("GGGGGGGGGGGGAAAAAAAAAAAAGGGGGGGGGGNNNNNNNNNNNEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
+        room_goto(Menu_Room_Victory);
+        //vdeath = 0;
+        //vlife = lives;
+        //vennemieNRV = 0;
+        //vtimerbaron = 1800;
+        }
+    }
+     if ( vdeath = 6){
+        vennemieNRV = 1;
+    }
+ }
+
+*/
+
+/////////////////////////////////////////////////// Level 1
+/*
  if (room = Level_01){
             // Spawn des Invader
             if ( vspawnbuster &lt; 3) &amp;&amp; (vtsbuster = 1){
@@ -360,8 +373,9 @@ vtm = 0;
                 vtsbuster=0;
             }
         }
-
-// Level 20
+        */
+//////////////////////////////////////////////////// Level 20
+        /*
         if (room = Level_20){
             // Spawn des baloons
             if ( vspawnb &lt; 3) &amp;&amp; (vtsb = 1){
@@ -386,9 +400,9 @@ vtm = 0;
         timeline_index = TL_bulle_d_eau;
         timeline_running = false;
         } 
-        
-// Level 47
-
+        */
+////////////////////////////////////////////////////// Level 47
+/*
     if (room = Level_47){
             // Spawn des Drunk
             if ( vspawnincendo = 1){
@@ -412,10 +426,10 @@ vtm = 0;
                 timeline_index = TL_bulle_feu;
                 timeline_running = true;
         }
-     
+        */
 
-// Level 62
-        if (room = Level_62){
+////////////////////////////////////////////////////////// Level 62
+        /*if (room = Level_62){
             // Spawn des Invader
             if ( vspawninvader &lt; 3) &amp;&amp; (vtsi = 1){
                 instance_create(120,6, obj_Invader);
@@ -437,7 +451,7 @@ vtm = 0;
                 vspawnDrunk =  0;
             }
         }
-*/
+        */
 </string>
           </argument>
         </arguments>

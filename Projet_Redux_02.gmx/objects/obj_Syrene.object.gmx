@@ -609,14 +609,14 @@ if (vspd &lt; 10)
  
 if (rkey){ 
     hspd = spd;
-    self.image_xscale = 1;
+    self.image_xscale = -1;
 }
 
 //Moving left 
 
 if (lkey){ 
     hspd = -spd;
-    self.image_xscale = -1;
+    self.image_xscale = 1;
 }
 
 // check for not moving 
@@ -864,6 +864,8 @@ if (lifeTimer == 0)
 
 if (jumpTimer == 0)
 {
+    instance_create(x, y, obj_ENM_PF_Dead);
+    score += 1000;
     instance_destroy();
 }
 
@@ -887,9 +889,23 @@ if (jumpTimer == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collision Joueur
+            <string>///Collision Joueur or Artefact special
+
+//Joueur
 if place_meeting(x, y, obj_Joueur)
 {
+ instance_create(x, y, obj_ENM_PF_Dead);
+ instance_destroy();
+}
+
+//Artefact spécial
+if place_meeting(x, y, obj_Fire) 
+|| place_meeting(x, y, obj_FireFall) 
+|| place_meeting(x, y, obj_FireFall_Special)
+|| place_meeting(x, y, obj_Eclair_Bouclier)
+|| place_meeting(x, y, obj_Eclair)
+{ 
+ instance_create(x, y, obj_AmePure);
  instance_destroy();
 }
 </string>
@@ -1025,6 +1041,7 @@ with (DegatCollision)
     instance_destroy();
 } 
 //Destroy ennemis
+instance_create(x, y, obj_AmePure);
 instance_destroy()
 }
 </string>
