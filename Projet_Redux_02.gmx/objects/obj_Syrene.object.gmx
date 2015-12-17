@@ -275,25 +275,25 @@ if ( vrand = 0 &amp;&amp; vtimer &lt;= 0)
 {
     vcc = 1;
     vtimer = 60;
-    show_debug_message("comportement 1");
+    //show_debug_message("comportement 1");
 }
 if ( vrand = 1 &amp;&amp; vtimer &lt;= 0)
 {
     vcc = 2;
     vtimer = 60;
-    show_debug_message("comportement 2");
+    //show_debug_message("comportement 2");
 }
 if ( vrand = 2 &amp;&amp; vtimer &lt;= 0)
 {
     vcc = 3;
     vtimer = 10;
-    show_debug_message("comportement 3");
+    //show_debug_message("comportement 3");
 }
 if ( vrand = 3 &amp;&amp; vtimer &lt;= 0)
 {
     vcc = 4;
     vtimer = 5;
-    show_debug_message("comportement 4");
+    //show_debug_message("comportement 4");
 }
 
 // si le buster n'est pas sur la meme ligne que le joueur il ne doit pas avoir le comportement 3
@@ -457,7 +457,7 @@ if ( vcc = 3 )
         
             if ((!place_meeting(x+8, y+8, obj_Block_Base)) &amp;&amp; (y &lt; 184))
             {
-                show_debug_message("place meeting block rkey = true ");           
+                //show_debug_message("place meeting block rkey = true ");           
                 rkey = false;
                 lkey = true;
                 dkey = false;
@@ -467,7 +467,7 @@ if ( vcc = 3 )
             
             if (place_meeting(x+8, y, obj_Block_Base))
             {
-                show_debug_message("rkey = true et place meeting block a droite");
+                //show_debug_message("rkey = true et place meeting block a droite");
                 rkey = false;
                 lkey = true;
                 dkey = false;
@@ -478,7 +478,7 @@ if ( vcc = 3 )
         
             if ((!place_meeting(x-8, y+8, obj_Block_Base)) &amp;&amp; (y &lt; 184))
             {
-                show_debug_message("place meeting block lkey = true ");
+                //show_debug_message("place meeting block lkey = true ");
                 rkey = true;
                 lkey = false;
                 dkey = false;
@@ -488,7 +488,7 @@ if ( vcc = 3 )
             
             if (place_meeting(x-8, y, obj_block_lvl_01))
             {
-                show_debug_message("lkey = true et place meeting block a gauche");
+                //show_debug_message("lkey = true et place meeting block a gauche");
                 rkey = true;
                 lkey = false;
                 dkey = false;
@@ -992,6 +992,45 @@ self.sprite_index=spr_ENM_Buster_Walk_NRV;
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collision Bulle Spécial
+
+if place_meeting(x, y, obj_Fire) 
+|| place_meeting(x, y, obj_FireFall) 
+|| place_meeting(x, y, obj_FireFall_Special)
+|| place_meeting(x, y, obj_Eclair_Bouclier)
+|| place_meeting(x, y, obj_Eclair)
+
+{ 
+            //Kill to âme pure
+
+//Destroy Collision Dégat ennemis
+with (DegatCollision)
+{
+    instance_destroy();
+} 
+//Destroy ennemis
+instance_destroy()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_Bulle_Tir">
       <action>
@@ -1020,6 +1059,36 @@ with (DegatCollision)
 show_debug_message("Touché");
 self.sprite_index=spr_ENM_Buster_Bubbled;
 Bubbled = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Joueur">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (CooldownDashMode = 1)
+{
+with (DegatCollision)
+{
+    instance_destroy();
+}
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

@@ -304,7 +304,7 @@ if ( vcc = 1)
         
             if ((!place_meeting(x+32, y+32, obj_Block_Base)))
             {
-                show_debug_message("place meeting block rkey = true ");           
+                //show_debug_message("place meeting block rkey = true ");           
                 rkey = false;
                 lkey = true;
                 vcs = 1;
@@ -312,7 +312,7 @@ if ( vcc = 1)
             
             if (place_meeting(x+8, y, obj_Block_Base))
             {
-                show_debug_message("rkey = true et place meeting block a droite");
+                //show_debug_message("rkey = true et place meeting block a droite");
                 rkey = false;
                 lkey = true;
                 vcs = 1;
@@ -321,7 +321,7 @@ if ( vcc = 1)
         
             if ((!place_meeting(x-32, y+32, obj_Block_Base)))
             {
-                show_debug_message("place meeting block lkey = true ");
+                //show_debug_message("place meeting block lkey = true ");
                 rkey = true;
                 lkey = false;
                 vcs = 0;
@@ -329,7 +329,7 @@ if ( vcc = 1)
             
             if (place_meeting(x-8, y, obj_Block_Base))
             {
-                show_debug_message("lkey = true et place meeting block a gauche");
+                //show_debug_message("lkey = true et place meeting block a gauche");
                 rkey = true;
                 lkey = false;
                 vcs = 0;
@@ -807,6 +807,45 @@ self.sprite_index=spr_ENM_Buster_Walk_NRV;
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collision Bulle Spécial
+
+if place_meeting(x, y, obj_Fire) 
+|| place_meeting(x, y, obj_FireFall) 
+|| place_meeting(x, y, obj_FireFall_Special)
+|| place_meeting(x, y, obj_Eclair_Bouclier)
+|| place_meeting(x, y, obj_Eclair)
+
+{ 
+            //Kill to âme pure
+
+//Destroy Collision Dégat ennemis
+with (DegatCollision)
+{
+    instance_destroy();
+} 
+//Destroy ennemis
+instance_destroy()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_Bulle_Tir">
       <action>
@@ -835,6 +874,36 @@ with (DegatCollision)
 show_debug_message("Touché");
 self.sprite_index=spr_ENM_Buster_Bubbled;
 Bubbled = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Joueur">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (CooldownDashMode = 1)
+{
+with (DegatCollision)
+{
+    instance_destroy();
+}
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

@@ -61,7 +61,7 @@ if ( vspawnok = 0){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_ENM_Buster">
+    <event eventtype="4" ename="obj_Degat">
       <action>
         <libid>1</libid>
         <id>603</id>

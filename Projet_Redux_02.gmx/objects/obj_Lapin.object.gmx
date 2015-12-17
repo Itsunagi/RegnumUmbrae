@@ -25,6 +25,76 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Variable Etats
+
+Bubbled = 0;
+NRV = 0
+Mort = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dégats du personnage
+DegatCollision = instance_create(x, y, obj_Degat);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Variable Bubbled
+lifeTimer = 300;
+jumpTimer = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Variable + IA Mouvement V
 randomize();
 
@@ -99,76 +169,6 @@ vpsprite = 0;
     vdkey = 0;
     vjkey = 0;
     
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Variable Etats
-
-Bubbled = 0;
-NRV = 0
-Mort = 0
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Dégats du personnage
-DegatCollision = instance_create(x, y, obj_Degat);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Variable Bubbled
-lifeTimer = 300;
-jumpTimer = 1;
 </string>
           </argument>
         </arguments>
@@ -255,7 +255,7 @@ if ( vcc = 1)
             
             if (place_meeting(x+8, y, obj_Block_Base))
             {
-                show_debug_message("rkey = true et place meeting block a droite");
+                //show_debug_message("rkey = true et place meeting block a droite");
                 rkey = false;
                 lkey = true;
                 vcs = 1;
@@ -264,7 +264,7 @@ if ( vcc = 1)
             
             if (place_meeting(x-8, y, obj_Block_Base))
             {
-                show_debug_message("lkey = true et place meeting block a gauche");
+                //show_debug_message("lkey = true et place meeting block a gauche");
                 rkey = true;
                 lkey = false;
                 vcs = 0;
@@ -292,7 +292,7 @@ if (vjkey &gt; 0)
 
 if ( place_meeting(x,y+8, obj_Block_Base))
 {
-    show_debug_message("STOooooooooooooooooooooooooooooooooooooooooooooooooooooooop");
+    //show_debug_message("STOooooooooooooooooooooooooooooooooooooooooooooooooooooooop");
     lkey = false;
     rkey = false;
 }
@@ -661,6 +661,45 @@ self.sprite_index=spr_ENM_Buster_Walk_NRV;
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collision Bulle Spécial
+
+if place_meeting(x, y, obj_Fire) 
+|| place_meeting(x, y, obj_FireFall) 
+|| place_meeting(x, y, obj_FireFall_Special)
+|| place_meeting(x, y, obj_Eclair_Bouclier)
+|| place_meeting(x, y, obj_Eclair)
+
+{ 
+            //Kill to âme pure
+
+//Destroy Collision Dégat ennemis
+with (DegatCollision)
+{
+    instance_destroy();
+} 
+//Destroy ennemis
+instance_destroy()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_Bulle_Tir">
       <action>
@@ -689,6 +728,36 @@ with (DegatCollision)
 show_debug_message("Touché");
 self.sprite_index=spr_ENM_Buster_Bubbled;
 Bubbled = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Joueur">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (CooldownDashMode = 1)
+{
+with (DegatCollision)
+{
+    instance_destroy();
+}
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

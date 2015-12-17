@@ -619,7 +619,7 @@ var GP_Jump_P = gamepad_button_check_pressed(0, gp_face1);
 var GP_Crouch = (gamepad_axis_value(0, gp_axislv)&gt;0.9);
 
 
-show_debug_message(vspd);
+//show_debug_message(vspd);
 
 // Gravity
 if (vspd &lt; 10) 
@@ -954,7 +954,7 @@ if (BouclierActive == 1)
 var Aspiration = keyboard_check(ord("K"));
 var GP_Aspiration = gamepad_button_check(0, gp_shoulderlb)
 
-show_debug_message(OnAspiration);
+//show_debug_message(OnAspiration);
 
 if (OnElemental == 0)
 {
@@ -1006,7 +1006,7 @@ if (OnAspiration ==0)
 if (OnElemental &gt; 0)
 {
     TimerELMBonus -=1;
-    show_debug_message(TimerELMBonus);
+    //show_debug_message(TimerELMBonus);
 }
 
 // Timer de Bulle
@@ -1021,7 +1021,7 @@ if (TimerELMBonus == 0)
 //Fire
 if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Feu)))
 {
-    show_debug_message("Bub_FIIIRREEEE");
+    //show_debug_message("Bub_FIIIRREEEE");
     self.sprite_index=spr_Bub_Walk_Fire; 
     OnElemental = 1;
     OnAspiration = 0;
@@ -1031,7 +1031,7 @@ if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Feu)))
 //Eau
 if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Eau)))
 {
-    show_debug_message("Bub_EAU");
+    //show_debug_message("Bub_EAU");
     self.sprite_index=spr_Bub_Walk_Water; 
     OnElemental = 2;
     OnAspiration = 0;
@@ -1041,7 +1041,7 @@ if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Eau)))
 //Eclair
 if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Eclair)))
 {
-    show_debug_message("Bub_ECLAIR");
+    //show_debug_message("Bub_ECLAIR");
     self.sprite_index=spr_Bub_Walk_Lightning; 
     OnElemental = 3;
     OnAspiration = 0;
@@ -1068,7 +1068,7 @@ if ((OnAspiration = 1) &amp;&amp; (place_meeting(x, y, obj_Bulle_Eclair)))
           <argument>
             <kind>1</kind>
             <string>/// Bullet Time
-show_debug_message(CooldownBullet);
+//show_debug_message(CooldownBullet);
 //Variable
 var Gp_BulTime = gamepad_button_check(0, gp_face3);
 
@@ -1181,11 +1181,14 @@ if ( vdestuction = 1){
 if (Mort ==0)
 {
     if (place_meeting(x, y, obj_Degat))
+    || (place_meeting(x, y, obj_Slime_shot))
+    || (place_meeting(x, y, obj_Ghost_shot))
+    || (place_meeting(x, y, obj_Syrene_shot))
     {   
         if (OnDash = 0)
         {
         lives -=1;
-        show_debug_message("Dead");
+        //show_debug_message("Dead");
         self.sprite_index=spr_Bub_Death;
         self.mask_index= -1;
         DeathAnim = 1;
@@ -1218,7 +1221,7 @@ deadTime -= 1;
 
     if (deadTime == 0)
     {   
-    show_debug_message("Invicible");
+    //show_debug_message("Invicible");
     self.sprite_index=spr_Bub_Walk_Invi;
     Invincible = 1;
     DeathAnim = 0;
@@ -1232,7 +1235,7 @@ if (Invincible == 1)
 invincibleTime -= 1;
     if (invincibleTime == 0)
     {   
-    show_debug_message("Normal");
+    //show_debug_message("Normal");
     self.sprite_index=spr_Bub_Walk;
     self.mask_index=spr_Bub_Walk;
     Invincible = 0;
