@@ -35,6 +35,7 @@
       <sprite>sprites\spr_Test_Taille</sprite>
       <sprite>sprites\spr_Ennemis_Test</sprite>
       <sprite>sprites\Block_BulleELM_Red</sprite>
+      <sprite>sprites\spr_partie_fermer</sprite>
     </sprites>
     <sprites name="spr_Bulles_Speciales">
       <sprite>sprites\spr_Bulle_Eclair</sprite>
@@ -163,6 +164,7 @@
       <object>objects\Block_Bulle_Aspiration</object>
       <object>objects\Ennemis_Test</object>
       <object>objects\obj_Test_Taille</object>
+      <object>objects\obj_partie_fermer</object>
     </objects>
     <objects name="obj_Mur">
       <object>objects\obj_mur</object>
@@ -191,8 +193,14 @@
         <object>objects\obj_Slime</object>
         <object>objects\obj_Slime_shot</object>
       </objects>
+<<<<<<< HEAD
       <objects name="obj_ENM_Baal">
         <object>objects\obj_Baal</object>
+=======
+      <objects name="obj_ENM_Squelette">
+        <object>objects\obj_Squelette_shot</object>
+        <object>objects\obj_Squelette</object>
+>>>>>>> origin/master
       </objects>
     </objects>
     <objects name="obj_Portail">
@@ -217,6 +225,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_test_squelette_</room>
     <room>rooms\rm_TestRoom</room>
     <room>rooms\rm_Niveau_1_test</room>
     <room>rooms\rm_Niveau_2_test</room>
