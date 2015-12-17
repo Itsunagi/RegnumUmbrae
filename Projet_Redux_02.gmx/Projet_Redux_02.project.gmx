@@ -14,6 +14,10 @@
       <sprite>sprites\spr_Bub_Walk_Lightning</sprite>
       <sprite>sprites\spr_Bub_Death</sprite>
       <sprite>sprites\spr_Bub_Walk_Invi</sprite>
+      <sprite>sprites\SPR_EXO_Walk</sprite>
+      <sprite>sprites\spr_Dash_On</sprite>
+      <sprite>sprites\SPR_EXO_USE_Flame</sprite>
+      <sprite>sprites\SPR_EXO_WALK_Flame</sprite>
     </sprites>
     <sprites name="spr_Block">
       <sprite>sprites\Block_Base</sprite>
@@ -24,6 +28,7 @@
       <sprite>sprites\spr_Bulle_Normal</sprite>
       <sprite>sprites\spr_Bulle_End</sprite>
       <sprite>sprites\spr_Bulle_Tir</sprite>
+      <sprite>sprites\SPR_BULLE_BASE</sprite>
     </sprites>
     <sprites name="spr_Test_group">
       <sprite>sprites\spr_Degat</sprite>
@@ -33,12 +38,19 @@
     </sprites>
     <sprites name="spr_Bulles_Speciales">
       <sprite>sprites\spr_Bulle_Eclair</sprite>
-      <sprite>sprites\spr_Eclair</sprite>
       <sprite>sprites\spr_bulle_eau</sprite>
       <sprite>sprites\spr_Eau_Goutte</sprite>
       <sprite>sprites\spr_bulle_Feu</sprite>
       <sprite>sprites\spr_FireFall</sprite>
       <sprite>sprites\spr_spawnerFire</sprite>
+      <sprite>sprites\SPR_EAU_REAL</sprite>
+      <sprite>sprites\SPR_FLAME_REAL</sprite>
+      <sprite>sprites\SPR_FLAME_STEPS</sprite>
+      <sprite>sprites\spr_Eclair_Bulle</sprite>
+      <sprite>sprites\spr_Eclair</sprite>
+      <sprite>sprites\SPR_BULLE_FEU2</sprite>
+      <sprite>sprites\SPR_DASH</sprite>
+      <sprite>sprites\SPR_FEU_2</sprite>
     </sprites>
     <sprites name="spr_ENM_Buster">
       <sprite>sprites\spr_ENM_Buster_Walk_Normal</sprite>
@@ -59,6 +71,44 @@
     <sprites name="spr_ELM">
       <sprite>sprites\spr_ELM_FireShoot</sprite>
       <sprite>sprites\spr_ELM_Lightning_Shield</sprite>
+    </sprites>
+    <sprites name="spr_ENM_PetiteFille">
+      <sprite>sprites\Filliette2</sprite>
+    </sprites>
+    <sprites name="spr_ENM_Syrene">
+      <sprite>sprites\SPR_SYRENE_PROJ</sprite>
+      <sprite>sprites\SPR_Syrene</sprite>
+    </sprites>
+    <sprites name="spr_ENM_SkullHead">
+      <sprite>sprites\SPR_SkullHead</sprite>
+    </sprites>
+    <sprites name="spr_ENM_LapinDemon">
+      <sprite>sprites\Lapin2</sprite>
+    </sprites>
+    <sprites name="spr_ENM_Fantome">
+      <sprite>sprites\SPR_Ghost</sprite>
+      <sprite>sprites\SPR_GHOST_PROJ</sprite>
+    </sprites>
+    <sprites name="spr_ENM_Slime">
+      <sprite>sprites\SPR_SLIME_PROJ</sprite>
+      <sprite>sprites\SPR_Slime</sprite>
+    </sprites>
+    <sprites name="spr_ENM_Skelette">
+      <sprite>sprites\SPR_SKULLET_BONE</sprite>
+      <sprite>sprites\SPR_Skullet</sprite>
+    </sprites>
+    <sprites name="spr_ENM_Baal">
+      <sprite>sprites\SPR_BAAL_NOWINGED</sprite>
+    </sprites>
+    <sprites name="spr_Portail">
+      <sprite>sprites\spr_Portail_1</sprite>
+      <sprite>sprites\spr_Portail_2</sprite>
+      <sprite>sprites\spr_Portail_3</sprite>
+      <sprite>sprites\spr_Portail_4</sprite>
+      <sprite>sprites\spr_Portail_5</sprite>
+      <sprite>sprites\spr_portail_6</sprite>
+      <sprite>sprites\spr_Portail_7</sprite>
+      <sprite>sprites\spr_Portail_8</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -112,10 +162,41 @@
       <objects name="obj_ENM_Buster">
         <object>objects\obj_ENM_Buster</object>
       </objects>
+      <objects name="obj_ENM_PetiteFille">
+        <object>objects\obj_ENM_PF</object>
+      </objects>
+      <objects name="obj_ENM_Syrene">
+        <object>objects\obj_Syrene</object>
+        <object>objects\obj_Syrene_shot</object>
+      </objects>
+      <objects name="obj_ENM_LapinDemoniaque">
+        <object>objects\obj_Lapin</object>
+      </objects>
+      <objects name="obj_ENM_Fantome">
+        <object>objects\obj_Ghost</object>
+        <object>objects\obj_Ghost_shot</object>
+      </objects>
+      <objects name="obj_ENM_Slime">
+        <object>objects\obj_Slime</object>
+        <object>objects\obj_Slime_shot</object>
+      </objects>
+    </objects>
+    <objects name="obj_Portail">
+      <object>objects\obj_Portail_1</object>
+      <object>objects\obj_Portail_2</object>
+      <object>objects\obj_Portail_4</object>
+      <object>objects\obj_Portail_5</object>
+      <object>objects\obj_Portail_6</object>
+      <object>objects\obj_Portail_7</object>
+      <object>objects\obj_Portail_8</object>
+      <object>objects\obj_Portail_3</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TestRoom</room>
+    <room>rooms\rm_Niveau_1_test</room>
+    <room>rooms\rm_Niveau_2_test</room>
+    <room>rooms\rm_Niveau_3_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

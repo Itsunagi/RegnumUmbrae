@@ -582,6 +582,11 @@
     <instance objName="obj_Bulle_Eclair" x="608" y="688" name="inst_89772E47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Feu" x="736" y="672" name="inst_DA8C9B4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bulle_Eau" x="848" y="688" name="inst_D9F1B297" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ENM_PF" x="192" y="672" name="inst_719876DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Syrene" x="256" y="672" name="inst_9E8EE709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Lapin" x="144" y="480" name="inst_050E1AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Ghost" x="544" y="720" name="inst_355B443F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Slime" x="752" y="400" name="inst_35057665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
