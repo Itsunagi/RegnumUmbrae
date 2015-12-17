@@ -107,15 +107,15 @@ vspawn = 0;
 globalvar timeToChangeRoom;
 timeToChangeRoom = 240;
 
-
+*/
 //Ennemis qui s'enerve
 vlife = lives; 
 vennemieNRV = 0;
 
 //Baron
-vtimerbaron = 1800;
+vtimerbaron = 800;
 
-
+/*
 //Sound
 audio_play_sound(Global, 10, true);
 
@@ -214,36 +214,39 @@ audio_play_sound(Global, 10, true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-var vretourdrunk = keyboard_check(ord("A"));
-if ( room = Menu_Room_MainMenuBitch)||( room = Menu_Room_Victory)||( room = Menu_Room_GameOver){
+            <string>
+//var vretourdrunk = keyboard_check(ord("A"));
+//if ( room = Menu_Room_MainMenuBitch)||( room = Menu_Room_Victory)||( room = Menu_Room_GameOver){
 //do nothing
-}else{
+//}else{
 
+/*
 if (vretourdrunk = true){
     vennemieNRV = 0;
 }
 if (instance_exists(obj_Bub_dead)){
     vennemieNRV = 0;
 }
+*/
+
+////////////////////////////////////////////Baron Base
 if (vlife = lives){
 }else{
     vtimerbaron = 1800;
     vlife = lives;
-    show_debug_message("debut timer");
+    //show_debug_message("debut timer");
 }
 vtimerbaron--;
+show_debug_message(vtimerbaron);
     if ( vtimerbaron = 0){
-        instance_create(24,32, obj_Mfantom);
+        instance_create(24,32, obj_Baal);
         show_debug_message("BARON CREATE !!!");
     }
     if (vtimerbaron = 300){
         vennemieNRV = 1;
-        show_debug_message("ENNEMIE NRV !!!");
+        //show_debug_message("ENNEMIE NRV !!!");
     }
- 
-}
-*/
+
 //////////////////////////////////////Calcul des ames
 
 if (vtm=0)

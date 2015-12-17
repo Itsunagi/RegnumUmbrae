@@ -191,6 +191,9 @@
         <object>objects\obj_Slime</object>
         <object>objects\obj_Slime_shot</object>
       </objects>
+      <objects name="obj_ENM_Baal">
+        <object>objects\obj_Baal</object>
+      </objects>
     </objects>
     <objects name="obj_Portail">
       <object>objects\obj_Portail_1</object>
