@@ -110,6 +110,16 @@
       <sprite>sprites\spr_Portail_7</sprite>
       <sprite>sprites\spr_Portail_8</sprite>
     </sprites>
+    <sprites name="spr_Ames">
+      <sprite>sprites\Ame_Bleu</sprite>
+      <sprite>sprites\Ame_violette</sprite>
+      <sprite>sprites\Ame_Rouge</sprite>
+      <sprite>sprites\Ame_Jaune</sprite>
+      <sprite>sprites\Ame_Verte</sprite>
+      <sprite>sprites\Ame_Argent</sprite>
+      <sprite>sprites\Ame_Or</sprite>
+      <sprite>sprites\Ame_Pure</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -164,6 +174,7 @@
       </objects>
       <objects name="obj_ENM_PetiteFille">
         <object>objects\obj_ENM_PF</object>
+        <object>objects\obj_ENM_PF_Dead</object>
       </objects>
       <objects name="obj_ENM_Syrene">
         <object>objects\obj_Syrene</object>
@@ -190,6 +201,16 @@
       <object>objects\obj_Portail_7</object>
       <object>objects\obj_Portail_8</object>
       <object>objects\obj_Portail_3</object>
+    </objects>
+    <objects name="obj_Ames">
+      <object>objects\obj_AmeBleu</object>
+      <object>objects\obj_AmeViolette</object>
+      <object>objects\obj_AmeRouge</object>
+      <object>objects\obj_AmeJaune</object>
+      <object>objects\obj_AmeVerte</object>
+      <object>objects\obj_AmeArgent</object>
+      <object>objects\obj_AmeOr</object>
+      <object>objects\obj_AmePure</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -834,6 +834,7 @@ if (jumpTimer == 0)
             <string>///Collision Joueur
 if place_meeting(x, y, obj_Joueur)
 {
+ instance_create(x, y, obj_ENM_PF_Dead);
  instance_destroy();
 }
 </string>
